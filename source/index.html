@@ -11,103 +11,218 @@
   <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.createElement( "picture" );
-    //По руководству автора - http://scottjehl.github.io/picturefill/
   </script>
   <title>DJStore</title>
 </head>
   <body class="body">
     <div class="wrapper">
-      <div class="container">
-        <h1 class="visually-hidden">DJStore</h1>
-        <header class="header">
-          <div class="wrapper header__wrapper">
-            <div class="header__logo">
-              <img src="img/logo.svg" width="154" height="32" alt="Logo">
-              <div class="burger header__burger">
-                <div></div>
-              </div>
+      <h1 class="visually-hidden">DJStore</h1>
+      <header class="header">
+        <div class="wrapper header__wrapper">
+          <div class="header__logo">
+            <img src="img/logo.svg" width="154" height="32" alt="Logo">
+            <div class="burger header__burger">
+              <div></div>
             </div>
-            <nav class="navigation header__navigation">
-              <ul class="list">
-                <li>
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="img/sprite.svg#icon-home"></use>
-                    </svg>
-                    <span>Главная</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="img/sprite.svg#icon-projects"></use>
-                    </svg>
-                    <span>Проекты</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="img/sprite.svg#icon-lamp"></use>
-                    </svg>
-                    <span>Услуги</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="img/sprite.svg#icon-rounds" fill='none'></use>
-                    </svg>
-                    <span>О Компании</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="img/sprite.svg#icon-layers"></use>
-                    </svg>
-                    <span>Готовые решения</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="img/sprite.svg#icon-pin" fill='none'></use>
-                    </svg>
-                    <span>Контакты</span>
-                  </a>
-                </li>
-                <li>
-                  <button class="button">Заполнить бриф</button>
-                </li>
-                <li>
-                  <a href="mailto:info@sld-store.ru">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="img/sprite.svg#icon-mail" fill='none'></use>
-                    </svg>
-                    <span>
-                      <span>Напишите нам</span>
-                      <b>info@sld-store.ru</b>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:88126156279">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="img/sprite.svg#icon-phone" fill='none'></use>
-                    </svg>
-                    <span>
-                      <span>Обратный звонок</span>
-                      <b>8 812 615-62-79</b>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
           </div>
-        </header>
-        <main class="main"></main>
-      </div>
+          <nav class="navigation header__navigation">
+            <ul class="list">
+              <li>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                  </svg>
+                  <span>Главная</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#icon-projects"></use>
+                  </svg>
+                  <span>Проекты</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#icon-lamp"></use>
+                  </svg>
+                  <span>Услуги</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#icon-rounds" fill='none'></use>
+                  </svg>
+                  <span>О Компании</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#icon-layers"></use>
+                  </svg>
+                  <span>Готовые решения</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#icon-pin" fill='none'></use>
+                  </svg>
+                  <span>Контакты</span>
+                </a>
+              </li>
+              <li>
+                <button class="button">Заполнить бриф</button>
+              </li>
+              <li>
+                <a href="mailto:info@sld-store.ru">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#icon-mail" fill='none'></use>
+                  </svg>
+                  <span>
+                    <span>Напишите нам</span>
+                    <b>info@sld-store.ru</b>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:88126156279">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="img/sprite.svg#icon-phone" fill='none'></use>
+                  </svg>
+                  <span>
+                    <span>Обратный звонок</span>
+                    <b>8 812 615-62-79</b>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="top">
+          <div class="top__wrapper">
+            <h2 class="visually-hidden">Оснащение конференц-залов</h2>
+            <p>Видео конференции</p>
+            <p>
+              Профессиональное оборудование для конференц-залов предназначено для проведения и 
+              организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента
+            </p>
+            <div class="top__buttons">
+              <button class="button button--transparent">Обратный звонок</button>
+              <button class="button">Заполнить бриф</button>
+            </div>
+          </div>
+          <div class="slider top__slider">
+            <ul class="list">
+              <li>
+                <picture>
+                  <source type="image/webp"
+                          srcset="img/slide-1@1x.webp 1x, img/slide-1@2x.webp 2x">
+
+                  <img src="img/slide-1@1x.jpg"
+                      srcset="img/slide-1@2x.png 2x"
+                      width="1920" height="624" alt="Слайд">
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source type="image/webp"
+                          srcset="img/slide-2@1x.webp 1x, img/slide-2@2x.webp 2x">
+
+                  <img src="img/slide-2@1x.jpg"
+                      srcset="img/slide-2@2x.png 2x"
+                      width="1920" height="624" alt="Слайд">
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="small-slider top__small-slider">
+            <ul class="list">
+              <li>
+                <p>1</p>
+                <p>
+                  Простота использования оснащения позволяет решать функциональные и организационные задачи, 
+                  оптимизировать работу, проводить мероприятия различного масштаба.
+                </p>
+              </li>
+              <li>
+                <p>2</p>
+                <p>
+                  Применение инновационных решений для демонстрации культурных и исторических реликвий – 
+                  актуальная тенденция, которая успешно применяется в музеях и на площадках альтернативного искусства.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="slider-buttons top__slider-buttons">
+            <button><span class="visually-hidden">Предыдущий слайд</span></button>
+            <button><span class="visually-hidden">Следующий слайд</span></button>
+          </div>
+        </section>
+        <section class="positions">
+          <h2 class="visually-hidden">Товары</h2>
+          <ul class="list position__row">
+            <li>
+              <picture>
+                <source type="image/webp"
+                        srcset="img/speakers@1x.webp 1x, img/speakers@2x.webp 2x">
+
+                <img src="img/speakers@1x.png"
+                    srcset="img/speakers@2x.png 2x"
+                    width="960" height="620" alt="Стереосистема">
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source type="image/webp"
+                        srcset="img/room@1x.webp 1x, img/room@2x.webp 2x">
+
+                <img src="img/room@1x.jpg"
+                    srcset="img/room@2x.jpg 2x"
+                    width="960" height="620" alt="Стереосистема">
+              </picture>
+              <div class="tooltip positions__tooltip">
+                <div class="tooltip__point">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="tooltip__info">
+                  <div>
+                    <h3>Микшерный пульт Yamaha MG10</h3>
+                    <img src="img/icon-mix.svg" width="44" height="44" alt="Микшер">
+                  </div>
+                  <ul class="list">
+                    <li>Простой интерфейс.</li>
+                    <li>Максимальная производительность.</li>
+                    <li>10 каналов.</li>
+                    <li>4 микрофонных / 10 линейных входов.</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <div class="popup">
+      <h2>Готовы обсудить проект?</h2>
+      <p>Заполните форму ниже и мы свяжемся с вами.</p>
+      <form action="index.html" method="POST">
+        <label class="visually-hidden" for='name'>Имя</label>
+        <input type="text" placeholder="Имя*" id="name" required>
+        <label class="visually-hidden" for='phone'>Телефон</label>
+        <input type="tel" placeholder="Телефон*" id="phone" required>
+        <input type="checkbox" id="personal-data" checked>
+        <label for="personal-data">Я согласен с условиями обработки <span>персональных данных</span></label>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <div class="popup__close"></div>
     </div>
     <script src="js/vendor.js"></script>
     <script src="js/script.js"></script>
