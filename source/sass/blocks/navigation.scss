@@ -1,5 +1,6 @@
 .navigation {
     margin-bottom: 6px;
+    margin-top: 16px;
 
     li {
         box-sizing: border-box;
@@ -12,6 +13,36 @@
         color: $textColor;
         display: flex;
         align-items: center;
+    }
+
+    a:hover,
+    a:focus {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: all 0.6s;
+
+        path {
+            opacity: 0.6;
+            transition: all 0.6;
+        }
+    }
+
+    a:active {
+        opacity: 0.4;
+
+        path {
+            opacity: 0.6;
+            transition: all 0.6;
+        }
+    }
+
+    .active {
+        color: $mainColor;
+        pointer-events: none;
+
+        path {
+            fill: $mainColor;
+        }
     }
 
     svg {
