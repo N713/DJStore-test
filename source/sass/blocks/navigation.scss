@@ -1,0 +1,29 @@
+.navigation {
+    margin-bottom: 6px;
+
+    li {
+        box-sizing: border-box;
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(43, 45, 58, 0.1);
+    }
+
+    a {
+        text-decoration: none;
+        color: $textColor;
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        margin-right: 24px;
+    }
+
+    .button {
+        margin-top: 16px;
+    }
+}
+
+.navigation__mail,
+.navigation__tel {
+    display: none;
+}

@@ -1,0 +1,12 @@
+.header {
+    background-color: $headerColor;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 6px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

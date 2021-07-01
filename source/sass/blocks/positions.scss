@@ -1,0 +1,17 @@
+.positions {
+    picture,
+    img {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+
+    li {
+        width: 100%;
+    }
+}
+
+.positions__row {
+    display: flex;
+    flex-wrap: nowrap;
+}

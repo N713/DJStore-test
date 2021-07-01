@@ -1,0 +1,56 @@
+.top {
+    position: relative;
+}
+
+.top__wrapper {
+    position: absolute;
+    box-sizing: border-box;
+    color: $whiteColor;
+    padding: 24px 16px;
+    min-height: 286px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    h2, p {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 14px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 16px;
+    }
+
+    h2 + p {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+.top__buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .button {
+        width: 100%;
+        max-width: 136px;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px;
+        margin-right: 16px;
+    }
+
+    .button:last-of-type {
+        margin-right: 0;
+    }
+}

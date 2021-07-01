@@ -1,0 +1,29 @@
+.button {
+    width: 100%;
+    min-height: 46px;
+    background-color: $mainColor;
+    color: $whiteColor;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: all 0.8s;
+    }
+
+    &:active {
+        opacity: 0.4;
+    }
+}
+
+.button--transparent {
+    background-color: transparent;
+    border: 1px solid $whiteColor;
+}

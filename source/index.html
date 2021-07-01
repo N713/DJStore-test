@@ -25,7 +25,7 @@
               <div></div>
             </div>
           </div>
-          <nav class="navigation header__navigation">
+          <nav class="navigation header__navigation none">
             <ul class="list">
               <li>
                 <a class="active" href="#">
@@ -75,10 +75,8 @@
                   <span>Контакты</span>
                 </a>
               </li>
-              <li>
-                <button class="button">Заполнить бриф</button>
-              </li>
-              <li>
+              <button class="button">Заполнить бриф</button>
+              <li class="navigation__mail">
                 <a href="mailto:info@sld-store.ru">
                   <svg width="24" height="24" viewBox="0 0 24 24">
                     <use xlink:href="img/sprite.svg#icon-mail" fill='none'></use>
@@ -89,7 +87,7 @@
                   </span>
                 </a>
               </li>
-              <li>
+              <li class="navigation__tel">
                 <a href="tel:88126156279">
                   <svg width="24" height="24" viewBox="0 0 24 24">
                     <use xlink:href="img/sprite.svg#icon-phone" fill='none'></use>
@@ -107,7 +105,7 @@
       <main class="main">
         <section class="top">
           <div class="top__wrapper">
-            <h2 class="visually-hidden">Оснащение конференц-залов</h2>
+            <h2>Оснащение конференц-залов</h2>
             <p>Видео конференции</p>
             <p>
               Профессиональное оборудование для конференц-залов предназначено для проведения и 
@@ -122,22 +120,23 @@
             <ul class="list">
               <li>
                 <picture>
-                  <source type="image/webp"
-                          srcset="img/slide-1@1x.webp 1x, img/slide-1@2x.webp 2x">
-
-                  <img src="img/slide-1@1x.jpg"
-                      srcset="img/slide-1@2x.png 2x"
-                      width="1920" height="624" alt="Слайд">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/slide-1@1x.webp 1x, img/slide-1@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/slide-1-tab@1x.webp 1x, img/slide-1-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slide-1-mob@1x.webp 1x, img/slide-1-mob@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/slide-1@1x.jpg 1x, img/slide-1@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/slide-1-tab@1x.jpg 1x, img/slide-1-tab@2x.jpg 2x">
+                  <img src="img/slide-1-mob@1x.jpg" srcset="img/slide-1-mob@2x.jpg 2x" alt="Первый слайд">
                 </picture>
               </li>
               <li>
                 <picture>
-                  <source type="image/webp"
-                          srcset="img/slide-2@1x.webp 1x, img/slide-2@2x.webp 2x">
-
-                  <img src="img/slide-2@1x.jpg"
-                      srcset="img/slide-2@2x.png 2x"
-                      width="1920" height="624" alt="Слайд">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/slide-2@1x.webp 1x, img/slide-2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/slide-2-tab@1x.webp 1x, img/slide-2-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slide-2-mob@1x.webp 1x, img/slide-2-mob@2x.webp 2x">
+                  
+                  <source media="(min-width: 1200px)" srcset="img/slide-2@1x.jpg 1x, img/slide-2@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/slide-2-tab@1x.jpg 1x, img/slide-2-tab@2x.jpg 2x">
+                  <img src="img/slide-2-mob@1x.jpg" srcset="img/slide-2-mob@2x.jpg 2x" alt="Первый слайд">
                 </picture>
               </li>
             </ul>
@@ -167,25 +166,27 @@
         </section>
         <section class="positions">
           <h2 class="visually-hidden">Товары</h2>
-          <ul class="list position__row">
+          <ul class="list positions__row">
             <li>
               <picture>
-                <source type="image/webp"
-                        srcset="img/speakers@1x.webp 1x, img/speakers@2x.webp 2x">
-
-                <img src="img/speakers@1x.png"
-                    srcset="img/speakers@2x.png 2x"
-                    width="960" height="620" alt="Стереосистема">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/speakers@1x.webp 1x, img/speakers@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/speakers-tab@1x.webp 1x, img/speakers-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/speakers-mob@1x.webp 1x, img/speakers-mob@2x.webp 2x">
+                
+                <source media="(min-width: 1200px)" srcset="img/speakers@1x.jpg 1x, img/speakers@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/speakers-tab@1x.jpg 1x, img/speakers-tab@2x.jpg 2x">
+                <img src="img/speakers-mob@1x.jpg" srcset="img/speakers-mob@2x.jpg 2x" alt="Акустическая система">
               </picture>
             </li>
             <li>
               <picture>
-                <source type="image/webp"
-                        srcset="img/room@1x.webp 1x, img/room@2x.webp 2x">
-
-                <img src="img/room@1x.jpg"
-                    srcset="img/room@2x.jpg 2x"
-                    width="960" height="620" alt="Стереосистема">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/room@1x.webp 1x, img/room@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/room-tab@1x.webp 1x, img/room-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/room-mob@1x.webp 1x, img/room-mob@2x.webp 2x">
+                
+                <source media="(min-width: 1200px)" srcset="img/room@1x.jpg 1x, img/room@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/room-tab@1x.jpg 1x, img/room-tab@2x.jpg 2x">
+                <img src="img/room-mob@1x.jpg" srcset="img/room-mob@2x.jpg 2x" alt="Акустическая система">
               </picture>
               <div class="tooltip positions__tooltip">
                 <div class="tooltip__point">
