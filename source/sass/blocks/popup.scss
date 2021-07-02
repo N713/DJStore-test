@@ -80,6 +80,7 @@
     .popup {
         max-width: 538px;
         padding: 48px 42px;
+        transform: translate(-50%,-110%);
 
         h2 {
             line-height: 32px;
@@ -109,11 +110,5 @@
                 max-width: 100%;
             }
         }
-    }
-}
-
-@media(min-width: $desktopResolution) {
-    .popup {
-        transform: translate(-50%,-100%);
     }
 }

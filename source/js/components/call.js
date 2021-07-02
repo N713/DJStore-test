@@ -8,6 +8,10 @@ const setPopupHandler = () => {
         evt.stopPropagation();
         popup.classList.remove('transparent');
         document.body.classList.add('dark');
+
+        popup.addEventListener('click', (evt) => {
+            evt.stopPropagation();
+        });
     });
 
     closeButton.addEventListener('click', (evt) => {
@@ -16,12 +20,8 @@ const setPopupHandler = () => {
         document.body.classList.remove('dark');
     });
 
-    document.body.addEventListener('click', (evt) => {
-        popup.addEventListener('click', (evt) => {
-            evt.stopPropagation();
-        });
-        
-        if(evt.currentTarget) {
+    document.body.addEventListener('click', (evt) => {        
+        if(evt.target) {
             popup.classList.add('transparent');
             document.body.classList.remove('dark');
         }
