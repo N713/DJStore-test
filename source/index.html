@@ -125,15 +125,17 @@
       <main class="main">
         <section class="top">
           <div class="top__wrapper">
-            <h2>Оснащение конференц-залов</h2>
-            <p>Видео конференции</p>
-            <p>
-              Профессиональное оборудование для конференц-залов предназначено для проведения и 
-              организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента
-            </p>
-            <div class="top__buttons">
-              <button class="button button--transparent">Обратный звонок</button>
-              <button class="button">Заполнить бриф</button>
+            <div class="top__wrapper-inner">
+              <h2>Оснащение конференц-залов</h2>
+              <p>Видео конференции</p>
+              <p>
+                Профессиональное оборудование для конференц-залов предназначено для проведения и 
+                организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента
+              </p>
+              <div class="top__buttons">
+                <button class="button button--transparent js-call-popup">Обратный звонок</button>
+                <button class="button">Заполнить бриф</button>
+              </div>
             </div>
           </div>
           <div class="slider top__slider">
@@ -164,14 +166,14 @@
           <div class="small-slider top__small-slider">
             <ul class="list">
               <li>
-                <p>1</p>
+                <b>01</b>
                 <p>
                   Простота использования оснащения позволяет решать функциональные и организационные задачи, 
                   оптимизировать работу, проводить мероприятия различного масштаба.
                 </p>
               </li>
               <li>
-                <p>2</p>
+                <b>02</b>
                 <p>
                   Применение инновационных решений для демонстрации культурных и исторических реликвий – 
                   актуальная тенденция, которая успешно применяется в музеях и на площадках альтернативного искусства.
@@ -209,11 +211,11 @@
                 <img src="img/room-mob@1x.jpg" srcset="img/room-mob@2x.jpg 2x" alt="Акустическая система">
               </picture>
               <div class="tooltip positions__tooltip">
-                <div class="tooltip__point">
+                <div class="tooltip__point" tabindex="0">
                   <div></div>
                   <div></div>
                 </div>
-                <div class="tooltip__info">
+                <div class="tooltip__info transparent">
                   <div>
                     <h3>Микшерный пульт Yamaha MG10</h3>
                     <img src="img/icon-mix.svg" width="44" height="44" alt="Микшер">
@@ -224,6 +226,7 @@
                     <li>10 каналов.</li>
                     <li>4 микрофонных / 10 линейных входов.</li>
                   </ul>
+                  <div class="close tooltip__close"></div>
                 </div>
               </div>
             </li>
@@ -231,19 +234,19 @@
         </section>
       </main>
     </div>
-    <div class="popup">
+    <div class="popup transparent">
       <h2>Готовы обсудить проект?</h2>
       <p>Заполните форму ниже и мы свяжемся с вами.</p>
       <form action="index.html" method="POST">
         <label class="visually-hidden" for='name'>Имя</label>
-        <input type="text" placeholder="Имя*" id="name" required>
+        <input type="text" placeholder="Имя*" id="name" name="name" required>
         <label class="visually-hidden" for='phone'>Телефон</label>
-        <input type="tel" placeholder="Телефон*" id="phone" required>
+        <input type="tel" placeholder="Телефон*" id="phone" name="phone" required>
         <input type="checkbox" id="personal-data" checked>
         <label for="personal-data">Я согласен с условиями обработки <span>персональных данных</span></label>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <div class="popup__close"></div>
+      <div class="close popup__close"></div>
     </div>
     <script src="js/vendor.js"></script>
     <script src="js/script.js"></script>

@@ -13,3 +13,20 @@
         height: auto;
     }
 }
+
+@media(min-width: $tabletResolution) {
+    .slider {
+        height: 410px;
+    }
+}
+
+@media(min-width: $desktopResolution) {
+    .slider {
+        height: 624px;
+
+        img, picture {
+            min-width: 1920px;
+            height: auto;
+        }
+    }
+}

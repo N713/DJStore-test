@@ -1,4 +1,11 @@
 .positions {
+    margin-bottom: 42px;
+
+    picture {
+        display: flex;
+        flex-direction: column;
+    }
+
     picture,
     img {
         width: 100%;
@@ -8,10 +15,50 @@
 
     li {
         width: 100%;
+        position: relative;
     }
 }
 
 .positions__row {
     display: flex;
     flex-wrap: nowrap;
+}
+
+.positions__tooltip {
+    .tooltip__point {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+
+        img {
+            width: 44px;
+            height: 44px;
+        }
+    }
+}
+
+@media (min-width: $tabletResolution) {
+    .positions {
+        margin-bottom: 68px;
+    }
+
+    .positions__tooltip {
+        .tooltip__point {
+            top: 24px;
+            left: 29px;
+        }
+    }
+}
+
+@media (min-width: $desktopResolution) {
+    .positions {
+        margin-bottom: 120px;
+    }
+
+    .positions__tooltip {
+        .tooltip__point {
+            top: 12%;
+            left: 19%;
+        }
+    }
 }

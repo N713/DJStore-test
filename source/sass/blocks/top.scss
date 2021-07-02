@@ -1,5 +1,6 @@
 .top {
     position: relative;
+    margin-bottom: 42px;
 }
 
 .top__wrapper {
@@ -11,8 +12,11 @@
     z-index: 100;
     top: 0;
     left: 0;
+    background-color: rgba(1, 1, 1, 0.4);
+    width: 100%;
 
-    h2, p {
+    h2,
+    p {
         margin: 0;
     }
 
@@ -52,5 +56,93 @@
 
     .button:last-of-type {
         margin-right: 0;
+    }
+}
+
+@media (min-width: $tabletResolution) {
+    .top {
+        margin-bottom: 68px;
+    }
+
+    .top__wrapper {
+        min-height: 410px;
+        padding: 70px 32px;
+
+        h2 {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 46px;
+            max-width: 480px;
+        }
+
+        h2 + p {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 59px;
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+
+    .top__buttons {
+        .button {
+            font-size: 14px;
+            line-height: 17px;
+            margin-right: 24px;
+            max-width: 166px;
+        }
+    }
+}
+
+@media (min-width: $desktopResolution) {
+    .top {
+        margin-bottom: 120px;
+    }
+
+    .top__wrapper {
+        min-height: 624px;
+        padding: 123px 20px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 555px;
+            margin-bottom: 54px;
+        }
+
+        h2 + p {
+            font-weight: 600;
+            font-size: 52px;
+            line-height: 63px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .top__wrapper-inner {
+        max-width: $desktopResolution;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .top__buttons {
+        .button {
+            max-width: 186px;
+        }
     }
 }

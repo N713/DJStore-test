@@ -1,3 +1,48 @@
 .slider-buttons {
     display: none;
 }
+
+@media(min-width: $desktopResolution) {
+    .slider-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 106px;
+        position: absolute;
+        top: 500px;
+        right: 400px;
+        z-index: 800;
+
+        button {
+            width: 32px;
+            height: 32px;
+            background-color: $mainColor;
+            border-radius: 100%;
+            border: none;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border: 1px solid $whiteColor;
+                transform: rotate(45deg);
+                border-bottom: 1px solid $mainColor;
+                border-left: 1px solid $mainColor;
+                left: 8px;
+            }
+        }
+
+        button:first-of-type {
+            &::after {
+                transform: rotate(-135deg);
+                left: 12px;
+            }
+        }
+    }
+}

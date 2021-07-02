@@ -21,6 +21,11 @@
     &:active {
         opacity: 0.4;
     }
+
+    &:disabled {
+        opacity: 0.2;
+        pointer-events: none;
+    }
 }
 
 .button--transparent {

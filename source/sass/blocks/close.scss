@@ -1,0 +1,40 @@
+.close {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        transition: all 0.4s;
+        opacity: 0.6;
+    }
+
+    &:active {
+        opacity: 0.4;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 14px;
+        height: 1px;
+        background-color: $textColor;
+        top: 6px;
+    }
+
+    &::before {
+        transform: rotate(-45deg);
+    }
+
+    &::after {
+        transform: rotate(45deg);
+    }
+}

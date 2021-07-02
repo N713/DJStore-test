@@ -1,6 +1,7 @@
 .navigation {
     margin-bottom: 6px;
     margin-top: 16px;
+    font-weight: 500;
 
     li {
         box-sizing: border-box;
@@ -39,6 +40,7 @@
     .active {
         color: $mainColor;
         pointer-events: none;
+        font-weight: 600;
 
         path {
             fill: $mainColor;
@@ -57,4 +59,138 @@
 .navigation__mail,
 .navigation__tel {
     display: none;
+}
+
+@media (min-width: $tabletResolution) {
+    .navigation {
+        font-size: 20px;
+        line-height: 24px;
+
+        li {
+            padding: 32px 0;
+        }
+
+        .button {
+            margin-top: 42px;
+        }
+
+        .navigation__mail a {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+    }
+
+    .navigation__mail {
+        display: block;
+
+        svg {
+            margin-right: 18px;
+        }
+
+        span {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        span span {
+            margin-bottom: 19px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            position: relative;
+            left: -42px;
+        }
+    }
+
+    .navigation .navigation__mail {
+        padding: 48px 0;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: $desktopResolution) {
+    .navigation {
+        margin: 0;
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba($color: $textColor, $alpha: 0.7);
+            font-weight: 400;
+        }
+
+        li {
+            border-bottom: none;
+            padding: 0 15px;
+        }
+
+        svg {
+            display: none;
+        }
+
+        .navigation__mail {
+            padding: 0;
+            font-size: 13px;
+            line-height: 16px;
+
+            span span {
+                display: none;
+            }
+
+            svg {
+                display: block;
+                margin-right: 10px;
+            }
+
+            a {
+                align-items: center;
+            }
+        }
+
+        .button {
+            display: none;
+        }
+
+        .navigation__tel {
+            display: block;
+            font-size: 13px;
+            line-height: 16px;
+
+            svg {
+                display: block;
+                margin-right: 10px;
+            }
+
+            span span {
+                display: block;
+                font-size: 10px;
+                line-height: 10px;
+                color: $mainColor;
+            }
+        }
+
+        .active {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 90%;
+                height: 4px;
+                background-color: $mainColor;
+                bottom: -44px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 6px;
+            }
+        }
+    }
 }

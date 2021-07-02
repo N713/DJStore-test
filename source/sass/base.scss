@@ -5,6 +5,11 @@
   line-height: 18px;
   color: $textColor;
   background-color: $whiteColor;
+  position: relative;
+}
+
+h1, h2, p {
+  margin: 0;
 }
 
 @media(min-width: $tabletResolution) {
