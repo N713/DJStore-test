@@ -1,4 +1,4 @@
-const UPLOAD_URL = 'https://somelink.com/';
+const UPLOAD_URL = 'http://localhost:3000';
 const form = document.body.querySelector('form');
 const submit = form.querySelector('button[type="submit"]');
 const checkbox = form.querySelector('input[type="checkbox"]');
