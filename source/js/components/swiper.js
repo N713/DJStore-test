@@ -1,5 +1,7 @@
 import Swiper from 'swiper';
 
+const slideWidth = document.body.querySelector('.small-slider li').offsetWidth;
+
 const setSwiper = () => {
     const swiper = new Swiper('.swiper-container', {
         direction: 'vertical',
@@ -15,7 +17,7 @@ const setSwiper = () => {
 
     const swiper1 = new Swiper('.swiper-container-1', {
         loop: false,
-        width: 344,
+        width: slideWidth,
 
         navigation: {
             nextEl: '.swiper-button-next',

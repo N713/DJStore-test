@@ -21,10 +21,6 @@ const showStickyHeader = () => {
 const setStickyHeader = () => {
     document.addEventListener('scroll', showStickyHeader);
     document.addEventListener('touchmove', showStickyHeader);
-
-    if (window.matchMedia("(min-width: 1200px)").matches) {
-        navigation.classList.remove('none');
-    }
 }
 
 export { setStickyHeader }
