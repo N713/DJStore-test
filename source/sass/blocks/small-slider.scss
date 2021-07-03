@@ -13,14 +13,33 @@
 
         ul {
             display: flex;
+            max-width: 688px;
+            flex-wrap: nowrap;
+            flex-shrink: 0;
         }
 
         li {
             width: 100%;
-            max-width: 344px;
+            min-width: 344px;
             box-sizing: border-box;
             padding: 34px;
+        }
+
+        .swiper-slide {
+            opacity: 0;
+        }
+
+        .swiper-slide-active {
             border-right: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 1;
+        }
+
+        .swiper-slide-next {
+            opacity: 0.4;
+        }
+
+        .swiper-slide-prev {
+            opacity: 0;
         }
 
         li {
@@ -37,6 +56,10 @@
                 font-size: 14px;
                 line-height: 22px;
                 color: rgba(255, 255, 255, 0.7);
+            }
+
+            &:last-of-type {
+                border: none;
             }
         }
     }

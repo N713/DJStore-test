@@ -33,7 +33,7 @@
     "smoothscroll-polyfill": "0.4.4",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "swiper": "^5.3.1",
+    "swiper": "^5.4.5",
     "tiny-slider": "2.9.2",
     "webpack": "4.41.5",
     "webpack-cli": "3.3.10",

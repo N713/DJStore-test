@@ -9,7 +9,7 @@
         align-items: center;
         width: 106px;
         position: absolute;
-        top: 500px;
+        top: 520px;
         right: 400px;
         z-index: 800;
 
@@ -32,9 +32,15 @@
                 height: 10px;
                 border: 1px solid $whiteColor;
                 transform: rotate(45deg);
-                border-bottom: 1px solid $mainColor;
-                border-left: 1px solid $mainColor;
+                border-bottom: 1px solid transparent;
+                border-left: 1px solid transparent;
                 left: 8px;
+            }
+
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                opacity: 0.4;
             }
         }
 
@@ -44,5 +50,11 @@
                 left: 12px;
             }
         }
+
+        .swiper-button-disabled {
+            opacity: 0.4;
+            background-color: rgba($color: $whiteColor, $alpha: 0.4);
+        }
+
     }
 }
